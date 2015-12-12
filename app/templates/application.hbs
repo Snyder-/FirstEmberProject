@@ -1,3 +1,29 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav class='nav nav-default'>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{link-to "Home" 'index' class="navbar-brand"}}
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>{{link-to "Albums" 'albums'}}</li>
+        <li>{{link-to "Compliment-Parser" 'compliments'}}</li>
+        <li>{{link-to "About" 'about'}}</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-{{outlet}}
+<div class="container">
+	<div class="row">
+		{{outlet}}
+	</div>
+</div>
+
+<div class="footer"></div>

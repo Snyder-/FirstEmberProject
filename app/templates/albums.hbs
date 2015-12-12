@@ -1,0 +1,8 @@
+<h2 class="title">Albums</h2>
+<div class="center-block well">
+	<ul id='album-list'>
+		{{#each model as |album|}}
+		<li><span class="year">{{album.year}}</span>: <span class="artist">{{album.artist}}</span> - <span class="album">{{album.album}}</span></li>
+		{{/each}}
+	</ul>
+</div>

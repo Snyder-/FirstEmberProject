@@ -1,0 +1,25 @@
+#album-list {	
+	list-style: none;
+}
+
+#album-list li {
+	font-size: 20px;
+}
+
+#album-list .year {
+	position: relative;
+	color: #1D6000;
+}
+#album-list .artist {
+	color: black;
+	font-size: 18px;
+}
+#album-list .album {
+	color: #660000;
+}
+
+.github-avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px 10px 10px 10px;
+}

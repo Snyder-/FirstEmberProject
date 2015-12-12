@@ -6,6 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+	this.resource('albums');
+	this.resource('about');
+	this.resource('compliments', function() {
+		this.route('commits', {path: "/commits"});
+	});
 });
 
 export default Router;

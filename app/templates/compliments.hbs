@@ -1,0 +1,6 @@
+<h3>{{model.name}} - <a target="_blank" href="{{model.html_url}}">Github Repo</a></h3>
+<p id="description">{{model.description}}</p>
+{{link-to "Commits" "compliments.commits"}}
+<hr>
+<p>Created by: {{model.owner.login}}</p>
+<a target="_blank" href="{{model.owner.html_url}}"><img src="{{model.owner.avatar_url}}" class="img-responsive thumbnail github-avatar" width="100px"></a>

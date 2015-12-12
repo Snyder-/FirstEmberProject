@@ -1,0 +1,10 @@
+<h2>About the Author</h2>
+	{{#each model as |b|}}
+		<p><span>{{b.author}} - Age: {{b.age}}</span></p>
+		<p><span>{{b.location}}</span></p>
+	<ol>
+	{{#each b.hobbies as |hobby|}}
+		<li>{{hobby}}</li>
+	{{/each}}
+	</ol>
+	{{/each}}
