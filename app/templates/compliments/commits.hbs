@@ -1,0 +1,7 @@
+<p> Commits will be shown here </p>
+<p>Number of commits: {{model.length}}</p>
+{{#each model as |c|}}
+Commited By: <span class="commit-author">{{c.commit.author.name}}</span>
+<p>Description: {{c.commit.message}}</p>
+<hr>
+{{/each}}
