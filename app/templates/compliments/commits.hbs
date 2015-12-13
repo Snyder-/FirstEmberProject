@@ -1,7 +1,18 @@
-<p> Commits will be shown here </p>
-<p>Number of commits: {{model.length}}</p>
-{{#each model as |c|}}
-Commited By: <span class="commit-author">{{c.commit.author.name}}</span>
-<p>Description: {{c.commit.message}}</p>
-<hr>
-{{/each}}
+<div class="container">
+	<div class="row">
+    <div class="col-xs-12">
+     <h2> Commits ({{model.length}})</h2>
+   </div>
+
+   {{#each model as |c|}}
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+    <div class="commit">
+     <p>Author: <span class="commit-author">{{c.author.name}}</span></p>
+     <p>Date: {{c.author.date}}</p>
+     <p>Description:</p>
+     <p>{{c.message}}</p>
+   </div>
+ </div>
+ {{/each}}
+</div>
+</div>

@@ -1,11 +1,43 @@
 <div class="container">
 	<div class="row">
-		<div class="xs-col-12">
-			<h1>Welcome to Sean Snyder's first Ember.js App</h1>
+    <div class="wrapper">
+      <div class="col-xs-12 col-md-6">
+        <label>Title:</label>
+        {{input type="text" value=title placeholder="Provide a description of the site."}}
 
-			<p>Enjoy this free Tomster image</p>
+        <h1>{{title}}</h1>
 
-			<img src="http://emberjs.com/images/community/tomsters/Ember-Munich-Half-sm.png">
-		</div>
-	</div>
+        <h3>Tomster</h3>
+        <img src="http://emberjs.com/images/community/tomsters/Ember-Munich-Half-sm.png">
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="row">
+        <div class="col-xs-12">
+         <label>Name:</label>
+         {{input type="text" value=name placeholder="Enter your name"}}
+         <label>Color:</label>
+         {{input type="text" value=color placeholder="Enter a color, word #000000 or rgb"}}
+         <p></p>
+       </div>
+       <div class="col-xs-12">
+         <label>Image:</label>
+         {{input type="text" value=image placeholder="Enter image url"}}
+       </div>
+       <div class="col-xs-12">
+         <label>Width:</label>
+         {{input type="number" id="img-width" value=width placeholder="Enter image width"}}
+         <label>Height:</label>
+         {{input type="number" id="img-height" value=height placeholder="Enter image height"}}
+       </div>
+     </div>
+     <div class="text">
+      <h3 style={{myStyle}}>My name is {{name}} and I want to learn Ember!</h3>
+      <img id="image-index" src="{{image}}" style="width:{{width}}px;height:{{height}}px;" class="img-responsive thumbnail">
+      {{gravatar-image size="151" email="sean_snyder@comcast.net"}}
+    </div>
+
+  </div>
+
+</div>
 </div>
