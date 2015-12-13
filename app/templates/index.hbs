@@ -30,8 +30,12 @@
          <label>Height:</label>
          {{input type="number" id="img-height" value=height placeholder="Enter image height"}}
        </div>
-     </div>
-     <div class="text">
+       <div class="col-xs-12">
+        <label>What's your favorite band?</label>
+        <input type="text" value={{favoriteBand}} onblur={{action "bandDidChange" value="target.value"}}>
+      </div>
+    </div>
+    <div class="text">
       <h3 style={{myStyle}}>My name is {{name}} and I want to learn Ember!</h3>
       <img id="image-index" src="{{image}}" style="width:{{width}}px;height:{{height}}px;" class="img-responsive thumbnail">
       {{gravatar-image size="151" email="sean_snyder@comcast.net"}}
