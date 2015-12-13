@@ -1,4 +1,4 @@
-# Spa
+# First Ember App
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -12,6 +12,7 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [MD5](https://github.com/blueimp/JavaScript-MD5)
 
 ## Installation
 
