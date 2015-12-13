@@ -48,6 +48,7 @@
 
 .center {
   text-align: center !important;
+  margin: auto;
 }
 
 #image-index {
@@ -62,4 +63,8 @@
   border-bottom: solid 1px #c9c9c9;
   transition: border 0.3s;
 
+}
+
+div {
+  border: 1px dashed red;
 }
